@@ -4,7 +4,7 @@ This project implements an Microsoft Outlook OAuth system that enables users to 
 ## Requirements 
 $ python3.10.x
 
-## How to run
+## Running server manually 
 
 $ Replace All configuration with microsoft credentials in oauth_setting.yaml file
 
@@ -15,6 +15,12 @@ $ python3 manage.py makemigrations
 $ python3 manage.py migrate
 
 $ python3 manage.py runserver
+
+## Running server through docker
+
+$ docker build -t ms-auth .
+
+$ docker run -p 8000:8000 ms-auth
 
 ## API endpoints
 $ / : Home page, requires signin if not signed in automatically redirects to outlook signin
@@ -28,6 +34,7 @@ $ v1/callback : Auth user response from Authorisation server
 ## DB schema
 
 $ User model : (id : int, user_name: str, email: str)
+
 
 ## Flow diagram
 

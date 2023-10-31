@@ -28,3 +28,7 @@ $ v1/callback : Auth user response from Authorisation server
 ## DB schema
 
 $ User model : (id : int, user_name: str, email: str)
+
+## Flow diagram
+
+![flow diagram]('https://raw.githubusercontent.com/vishal-s-patil/Microsoft-Outlook-OAuth-system/main/ms-Auth.png')
